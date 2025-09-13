@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({ currentSection, onNavigate }) => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail size={14} />
-              <span>info@balkandetailing.com</span>
+              <span>balkandetailingco@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center space-x-2">
