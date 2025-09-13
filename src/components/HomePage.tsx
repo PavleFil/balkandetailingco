@@ -53,6 +53,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <section className="relative bg-black text-white overflow-hidden min-h-screen flex items-center">
         {/* Luxury car background */}
         <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
           <img 
             src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
             alt="Luxury car detail" 
