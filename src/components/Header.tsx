@@ -24,17 +24,17 @@ const Header: React.FC<HeaderProps> = ({ currentSection, onNavigate }) => {
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              <Phone size={14} />
-              <span>(555) 123-4567</span>
+              <Phone size={14} className="text-amber-400"/>
+              <span className="text-amber-400">(021) 266-3881</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Mail size={14} />
-              <span>balkandetailingco@gmail.com</span>
+              <Mail size={14} className="text-amber-400"/>
+              <span className="text-amber-400">balkandetailingco@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <MapPin size={14} />
-            <span>Serving Greater Metro Area</span>
+            <MapPin size={14} className="text-amber-400"/>
+            <span className="text-amber-400">Serving Auckland City</span>
           </div>
         </div>
       </div>
