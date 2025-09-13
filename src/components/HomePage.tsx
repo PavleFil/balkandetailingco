@@ -71,26 +71,26 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         
         <div className="relative max-w-7xl mx-auto px-4 py-24 z-30">
           <div className="text-center">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Precision Car Detailing <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
                 with a Balkan Touch
               </span>
             </h2>
-            <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-slate-300 mb-6 md:mb-8 max-w-3xl mx-auto">
               Bringing Old-World Craftsmanship to Modern Vehicle Care
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={() => onNavigate('services')}
-                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl text-sm md:text-base"
               >
                 <span>View Our Services</span>
                 <ArrowRight size={20} />
               </button>
               <button
                 onClick={() => onNavigate('contact')}
-                className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+                className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold transition-all duration-300 text-sm md:text-base"
               >
                 Get a Quote
               </button>

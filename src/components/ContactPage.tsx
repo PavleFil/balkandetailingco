@@ -14,9 +14,25 @@ const ContactPage: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would send this data to your backend
+    
+    // Create email content
+    const subject = encodeURIComponent(`Quote Request from ${formData.name}`);
+    const body = encodeURIComponent(`
+Name: ${formData.name}
+Phone: ${formData.phone}
+Email: ${formData.email}
+Service Needed: ${formData.service}
+Vehicle Details: ${formData.vehicle}
+
+Message:
+${formData.message}
+    `);
+    
+    // Open email client
+    window.location.href = `mailto:balkandetailingco@gmail.com?subject=${subject}&body=${body}`;
+    
     setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    setTimeout(() => setIsSubmitted(false), 5000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

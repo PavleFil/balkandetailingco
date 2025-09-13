@@ -35,11 +35,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Our Services</h4>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Exterior Detailing</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Interior Deep Clean</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Paint Correction</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Ceramic Coating</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Complete Packages</a></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Exterior Detailing</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Interior Deep Clean</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Paint Correction</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Ceramic Coating</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Complete Packages</button></li>
             </ul>
           </div>
 
@@ -47,11 +47,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">About Our Heritage</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">View Gallery</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Get a Quote</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Customer Reviews</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Service Area</a></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">About Our Heritage</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">View Gallery</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Get a Quote</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Customer Reviews</button></li>
+              <li><button onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors text-left">Service Area</button></li>
             </ul>
           </div>
 

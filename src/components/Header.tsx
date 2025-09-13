@@ -20,36 +20,36 @@ const Header: React.FC<HeaderProps> = ({ currentSection, onNavigate }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm shadow-lg border-b border-gray-800">
       {/* Top contact bar */}
-      <div className="bg-gradient-to-r from-gray-900 to-black text-white py-2 px-4">
+      <div className="bg-gradient-to-r from-gray-900 to-black text-white py-1 px-4 md:py-2">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-3 md:space-x-6">
             <div className="flex items-center space-x-2">
-              <Phone size={14} className="text-amber-400"/>
-              <span className="text-amber-400">(021) 266-3881</span>
+              <Phone size={12} className="text-amber-400 md:w-3.5 md:h-3.5"/>
+              <span className="text-amber-400 text-xs md:text-sm">(021) 266-3881</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Mail size={14} className="text-amber-400"/>
-              <span className="text-amber-400">balkandetailingco@gmail.com</span>
+            <div className="hidden sm:flex items-center space-x-2">
+              <Mail size={12} className="text-amber-400 md:w-3.5 md:h-3.5"/>
+              <span className="text-amber-400 text-xs md:text-sm">balkandetailingco@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <MapPin size={14} className="text-amber-400"/>
-            <span className="text-amber-400">Serving Auckland City</span>
+            <MapPin size={12} className="text-amber-400 md:w-3.5 md:h-3.5"/>
+            <span className="text-amber-400 text-xs md:text-sm">Serving Auckland City</span>
           </div>
         </div>
       </div>
 
       {/* Main navigation */}
-      <nav className="max-w-7xl mx-auto px-4 py-4">
+      <nav className="max-w-7xl mx-auto px-4 py-2 md:py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shadow-lg">
-              <div className="text-white font-bold text-xl">B</div>
+            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shadow-lg">
+              <div className="text-white font-bold text-sm md:text-xl">B</div>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white">Balkan Detailing Co.</h1>
-              <p className="text-sm text-gray-300">Precision • Heritage • Excellence</p>
+              <h1 className="text-sm md:text-xl font-bold text-white">Balkan Detailing Co.</h1>
+              <p className="text-xs md:text-sm text-gray-300">Precision • Heritage • Excellence</p>
             </div>
           </div>
 
